@@ -1,67 +1,139 @@
-<!DOCTYPE html> <!-- اعلام می‌کنه که این سند HTML5 هست -->
-<html lang="en"> <!-- شروع سند HTML و زبان رو انگلیسی تنظیم می‌کنه -->
+<!DOCTYPE html>
+<html lang="fa">
 <head>
-    <meta charset="utf-8" /> <!-- تنظیم کدگذاری کاراکترها روی UTF-8 برای پشتیبانی از فارسی و انگلیسی -->
-    <title>kashani | کاشانی</title> <!-- عنوان صفحه که بالای مرورگر نمایش داده می‌شه -->
-    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.4c38d8ed-8e90-4306-aabe-31411ec41ea2.png" type="image/png"> <!-- آیکون (favicon) سایت -->
-    <!-- فونت Audiowide -->
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"> <!-- بارگذاری فونت Audiowide از گوگل -->
+    <meta charset="utf-8" />
+    <title>kashani | کاشانی</title>
+    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.4c38d8ed-8e90-4306-aabe-31411ec41ea2.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background: linear-gradient(135deg, #000000, #0d0d1a, #800080); /* پس‌زمینه گرادینت مشکی → سرمه‌ای → بنفش */
-            color: #ffffff; /* رنگ متن پیش‌فرض سفید */
-            font-family: 'Audiowide', cursive; /* فونت کلی صفحه Audiowide */
-            margin: 0; /* حذف فاصله پیش‌فرض اطراف صفحه */
-            padding: 0; /* حذف فاصله داخلی پیش‌فرض */
-            text-align: center; /* متن‌ها وسط‌چین */
+            margin: 0;
+            padding: 0;
+            font-family: 'Audiowide', cursive;
+            background: linear-gradient(135deg, #000000, #0d0d1a, #800080);
+            color: #ffffff;
+            text-align: center;
         }
 
         .name {
-            position: absolute; /* موقعیت مطلق نسبت به صفحه */
-            top: 20px; /* فاصله از بالا 20px */
-            right: 30px; /* فاصله از راست 30px */
-            font-size: 22px; /* اندازه فونت 22px */
-            font-weight: bold; /* متن بولد */
-            color: #00BFFF; /* رنگ آبی نئونی */
-            text-transform: uppercase; /* حروف انگلیسی بزرگ‌نویسی */
-            letter-spacing: 2px; /* فاصله بین حروف 2px */
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #00BFFF;
+            letter-spacing: 2px;
         }
 
         .welcome {
-            font-size: 42px; /* اندازه فونت بزرگ‌تر */
-            margin-top: 100px; /* فاصله از بالا 100px */
-            font-weight: bold; /* متن بولد */
-            color: #FFD700; /* رنگ طلایی لوکس */
-            letter-spacing: 3px; /* فاصله بین حروف 3px */
+            font-size: 42px;
+            margin-top: 100px;
+            font-weight: bold;
+            color: #FFD700;
+            letter-spacing: 3px;
         }
 
         .underline {
-            width: 50%; /* عرض خط نصف صفحه */
-            border: none; /* حذف حاشیه پیش‌فرض */
-            border-top: 2px solid #FFD700; /* خط افقی طلایی */
-            margin: 20px auto 30px auto; /* فاصله بالا 20px، پایین 30px، وسط‌چین */
+            width: 50%;
+            border: none;
+            border-top: 2px solid #FFD700;
+            margin: 20px auto 30px auto;
         }
 
         .preview {
-            margin-top: 20px; /* فاصله از بالا 20px */
-            max-width: 90%; /* عرض عکس حداکثر 90% صفحه */
-            height: auto; /* ارتفاع متناسب با عرض */
-            border-radius: 10px; /* گوشه‌های گرد عکس */
-            border: 2px solid #800080; /* حاشیه بنفش */
-            box-shadow: 0 0 10px rgba(80, 0, 120, 0.4); /* سایه نئونی بنفش کم و تیره */
-            transition: box-shadow 0.3s ease, transform 0.3s ease; /* افکت نرم هنگام تغییر سایه یا حرکت */
+            margin-top: 20px;
+            max-width: 90%;
+            border-radius: 10px;
+            border: 2px solid #800080;
+            box-shadow: 0 0 10px rgba(80, 0, 120, 0.4);
+            transition: all 0.3s ease;
         }
 
         .preview:hover {
-            box-shadow: 0 0 16px rgba(128, 0, 255, 0.5); /* سایه روشن‌تر وقتی موس روی عکس میره */
-            transform: translateY(-2px); /* عکس کمی بالا میره (افکت هاور) */
+            box-shadow: 0 0 16px rgba(128, 0, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        body.page2 {
+            font-size: 20px;
+            color: #000;
+            background-image: url('food-screenshot.png');
+            background-size: cover;
+        }
+
+        .box {
+            width: 900px;
+            float: right;
+        }
+
+        .box ul li {
+            width: 120px;
+            float: left;
+            margin: 10px auto;
+            text-align: center;
+            list-style: none;
+        }
+
+        .box ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .wd {
+            width: 300px;
+            height: 539px;
+            background-color: #ffffff;
+            opacity: 0.85;
+            padding: 55px;
+            margin: 100px auto;
+            color: #000;
+        }
+
+        .wd h1, .wd h2, .wd h4 {
+            text-align: center;
+        }
+
+        .wd h4 {
+            color: rgb(45, 184, 82);
+        }
+
+        .opt input[type="button"] {
+            animation: glowing 300ms infinite;
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+
+        @keyframes glowing {
+            0% { background-color: red; }
+            50% { background-color: orange; }
+            100% { background-color: blue; }
+        }
+
+        .wd p {
+            text-align: center;
+            color: #555;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
-    <div class="name">علیرضا کاشانی</div> <!-- نمایش اسم بالا سمت راست -->
-    <div class="welcome">Welcome to paradise</div> <!-- تیتر اصلی وسط صفحه -->
-    <hr class="underline"> <!-- خط طلایی زیر تیتر -->
-    <img class="preview" src="https://i.postimg.cc/VLLBRpDP/IMG-20251122-234456-437.jpg" alt="Paradise UI Preview"> <!-- عکس با استایل نئونی بنفش -->
-</body>
-</html>
+
+    <div class="name">علیرضا کاشانی</div>
+
+    <div class="welcome">Welcome to paradise</div>
+    <hr class="underline">
+
+    <img class="preview" src="https://i.postimg.cc/VLLBRpDP/IMG-20251122-234456-437.jpg" alt="preview">
+
+    <div class="wd">
+        <h1>Welcome to paradise</h1>
+        <h4><i>Web Site alireza kashani</i></h4>
+        <h2>Paradise</h2>
+
+        <div class="opt">
+            <form>
+                <input type="button" value="Click konid">
+            </form>
+            <p>alirezakashani.ir</p>
