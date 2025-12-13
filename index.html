@@ -1,139 +1,115 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>kashani | کاشانی</title>
-    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.4c38d8ed-8e90-4306-aabe-31411ec41ea2.png" type="image/png">
+
+    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.4c38d8ed-8e90-4306-aabe-31411ec41ea2.png">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Audiowide', cursive;
-            background: linear-gradient(135deg, #000000, #0d0d1a, #800080);
-            color: #ffffff;
-            text-align: center;
+        body{
+            margin:0;
+            padding:0;
+            font-family:'Audiowide', cursive;
+            background: linear-gradient(135deg,#000,#0d0d1a,#800080);
+            color:white;
+            text-align:center;
         }
 
-        .name {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 22px;
-            font-weight: bold;
-            color: #00BFFF;
-            letter-spacing: 2px;
+        .name{
+            position:absolute;
+            top:20px;
+            right:30px;
+            color:#00BFFF;
+            font-size:22px;
+            letter-spacing:2px;
         }
 
-        .welcome {
-            font-size: 42px;
-            margin-top: 100px;
-            font-weight: bold;
-            color: #FFD700;
-            letter-spacing: 3px;
+        .welcome{
+            font-size:42px;
+            margin-top:100px;
+            color:#FFD700;
+            letter-spacing:3px;
         }
 
-        .underline {
-            width: 50%;
-            border: none;
-            border-top: 2px solid #FFD700;
-            margin: 20px auto 30px auto;
+        .underline{
+            width:50%;
+            border:none;
+            border-top:2px solid #FFD700;
+            margin:20px auto 30px;
         }
 
-        .preview {
-            margin-top: 20px;
-            max-width: 90%;
-            border-radius: 10px;
-            border: 2px solid #800080;
-            box-shadow: 0 0 10px rgba(80, 0, 120, 0.4);
-            transition: all 0.3s ease;
+        .preview{
+            max-width:90%;
+            border-radius:10px;
+            border:2px solid purple;
+            box-shadow:0 0 12px rgba(128,0,255,0.4);
+            margin-bottom:40px;
         }
 
-        .preview:hover {
-            box-shadow: 0 0 16px rgba(128, 0, 255, 0.5);
-            transform: translateY(-2px);
+        .wd{
+            width:320px;
+            background:black;
+            opacity:0.85;
+            padding:40px;
+            margin:0 auto 60px;
         }
 
-        body.page2 {
-            font-size: 20px;
-            color: #000;
-            background-image: url('food-screenshot.png');
-            background-size: cover;
-        }
+        .wd h4{color:darkgray;}
 
-        .box {
-            width: 900px;
-            float: right;
-        }
-
-        .box ul li {
-            width: 120px;
-            float: left;
-            margin: 10px auto;
-            text-align: center;
-            list-style: none;
-        }
-
-        .box ul li a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .wd {
-            width: 300px;
-            height: 539px;
-            background-color: #ffffff;
-            opacity: 0.85;
-            padding: 55px;
-            margin: 100px auto;
-            color: #000;
-        }
-
-        .wd h1, .wd h2, .wd h4 {
-            text-align: center;
-        }
-
-        .wd h4 {
-            color: rgb(45, 184, 82);
-        }
-
-        .opt input[type="button"] {
+        input[type=button]{
+            padding:10px 25px;
+            font-size:16px;
+            color:white;
+            background:black;
+            border:none;
+            cursor:pointer;
             animation: glowing 300ms infinite;
-            font-size: 16px;
-            padding: 8px 20px;
         }
 
-        @keyframes glowing {
-            0% { background-color: red; }
-            50% { background-color: orange; }
-            100% { background-color: blue; }
+        @keyframes glowing{
+            0%{background:red;}
+            50%{background:orange;}
+            100%{background:blue;}
         }
 
-        .wd p {
-            text-align: center;
-            color: #555;
-            margin-top: 40px;
+        #foodImage{
+            display:none;
+            margin:40px auto;
+            max-width:90%;
+            border-radius:12px;
+            box-shadow:0 0 15px rgba(255,255,255,0.4);
         }
     </style>
 </head>
 
 <body>
 
-    <div class="name">علیرضا کاشانی</div>
+<div class="name">alireza kashani</div>
 
-    <div class="welcome">Welcome to paradise</div>
-    <hr class="underline">
+<div class="welcome">Welcome to Paradise</div>
+<hr class="underline">
 
-    <img class="preview" src="https://i.postimg.cc/VLLBRpDP/IMG-20251122-234456-437.jpg" alt="preview">
+<img class="preview"
+     src="https://i.postimg.cc/VLLBRpDP/IMG-20251122-234456-437.jpg">
 
-    <div class="wd">
-        <h1>Welcome to paradise</h1>
-        <h4><i>Web Site alireza kashani</i></h4>
-        <h2>Paradise</h2>
+<div class="wd">
+    <h1>Welcome to My Website</h1>
+    <h4><i>Welcome to the world of movies and series website</i></h4>
+    <h2>Paradise</h2>
 
-        <div class="opt">
-            <form>
-                <input type="button" value="Click konid">
-            </form>
-            <p>alirezakashani.ir</p>
+    <input type="button" value="Stranger Things" onclick="showFood()">
+    <p>alirezakashani.ir</p>
+</div>
+<img id="foodImage" src="https://i.postimg.cc/N0Ybz6Pt/stranger-things-3840x2160-24522.jpg" alt="Food Image">
+
+<script>
+    function showFood(){
+        document.getElementById("foodImage").style.display="block";
+        document.getElementById("foodImage").scrollIntoView({behavior:"smooth"});
+    }
+</script>
+
+</body>
+</html>
