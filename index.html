@@ -1,115 +1,63 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>kashani | کاشانی</title>
-
-    <link rel="icon" href="https://copilot.microsoft.com/th/id/BCO.4c38d8ed-8e90-4306-aabe-31411ec41ea2.png">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
-    <style>
-        body{
-            margin:0;
-            padding:0;
-            font-family:'Audiowide', cursive;
-            background: linear-gradient(135deg,#000,#0d0d1a,#800080);
-            color:white;
-            text-align:center;
-        }
-
-        .name{
-            position:absolute;
-            top:20px;
-            right:30px;
-            color:#00BFFF;
-            font-size:22px;
-            letter-spacing:2px;
-        }
-
-        .welcome{
-            font-size:42px;
-            margin-top:100px;
-            color:#FFD700;
-            letter-spacing:3px;
-        }
-
-        .underline{
-            width:50%;
-            border:none;
-            border-top:2px solid #FFD700;
-            margin:20px auto 30px;
-        }
-
-        .preview{
-            max-width:90%;
-            border-radius:10px;
-            border:2px solid purple;
-            box-shadow:0 0 12px rgba(128,0,255,0.4);
-            margin-bottom:40px;
-        }
-
-        .wd{
-            width:320px;
-            background:black;
-            opacity:0.85;
-            padding:40px;
-            margin:0 auto 60px;
-        }
-
-        .wd h4{color:darkgray;}
-
-        input[type=button]{
-            padding:10px 25px;
-            font-size:16px;
-            color:white;
-            background:black;
-            border:none;
-            cursor:pointer;
-            animation: glowing 300ms infinite;
-        }
-
-        @keyframes glowing{
-            0%{background:red;}
-            50%{background:orange;}
-            100%{background:blue;}
-        }
-
-        #foodImage{
-            display:none;
-            margin:40px auto;
-            max-width:90%;
-            border-radius:12px;
-            box-shadow:0 0 15px rgba(255,255,255,0.4);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>goroh 8</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header>
+<h1>goroh 8</h1>
+</header>
+<div class="flex">
+    <aside class="sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#box1">Box 1</a></li>
+        <li><a href="#box2">Box 2</a></li>
+        <li><a href="#table-section">Table</a></li>
+      </ul>
+    </aside>
+    <main class="etelat">
+ <section id="box1" class="box">
+ <img src="https://picsum.photos/400/200?random=1" alt="image 1">
+    <h3>Box 1</h3>
+    <p> box image 1 </p>
+  </section>
+   <section id="box2" class="box">
+        <img src="https://picsum.photos/400/200?random=2" alt="Sample Image 2">
+        <h3>Box 2</h3>
+        <p> box image 2 </p>
+      </section>
+      <section id="table">
+        <h3>Table</h3>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Lesson</th>
+            <th>Score</th>
+          </tr>
+          <tr>
+            <td>Ali</td>
+            <td>HTML</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Reza</td>
+            <td>CSS</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Sara</td>
+            <td>JS</td>
+            <td>19</td>
+          </tr>
+        </table>
+      </section>
 
-<div class="name">alireza kashani</div>
+    </main>
 
-<div class="welcome">Welcome to Paradise</div>
-<hr class="underline">
-
-<img class="preview"
-     src="https://i.postimg.cc/VLLBRpDP/IMG-20251122-234456-437.jpg">
-
-<div class="wd">
-    <h1>Welcome to My Website</h1>
-    <h4><i>Welcome to the world of movies and series website</i></h4>
-    <h2>Paradise</h2>
-
-    <input type="button" value="Stranger Things" onclick="showFood()">
-    <p>alirezakashani.ir</p>
-</div>
-<img id="foodImage" src="https://i.postimg.cc/N0Ybz6Pt/stranger-things-3840x2160-24522.jpg" alt="Food Image">
-
-<script>
-    function showFood(){
-        document.getElementById("foodImage").style.display="block";
-        document.getElementById("foodImage").scrollIntoView({behavior:"smooth"});
-    }
-</script>
+  </div>
 
 </body>
 </html>
